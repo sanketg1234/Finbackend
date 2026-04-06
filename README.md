@@ -21,6 +21,29 @@ Database: MongoDB
 ODM: Mongoose
 Security: `jsonwebtoken` (JWT), `bcryptjs`, `cors`
 
+## 💻 Local Setup & Installation
+ 1. Prerequisites
+Ensure you have the following installed on your machine:
+ Node.js
+ MongoDB
+  
+ 2. Clone the Repository & Install Dependencies
+```bash
+git clone <your-repository-url>
+cd <your-project-folder>
+npm install
+```
+3.Environment Variables
+create .env file and add
+PORT=5000,
+MONGO_URI=your_mongodb_connection_string,
+JWT_SECRET=your_super_secret_jwt_key,
+
+4.start server
+```bash
+npm run dev
+```
+
 ## Folder Strecture
 /backend
 ├── config/
