@@ -1,35 +1,27 @@
 # Finance Data Processing & Access Control Backend
-
 A secure, RESTful backend API built with Node.js and Express for managing financial records. This application features strict Role-Based Access Control (RBAC), secure JWT authentication, and advanced MongoDB aggregation pipelines to generate real-time financial dashboards.
 
-
 # Key Features
-
 Authentication: Secure user registration and login using JSON Web Tokens (JWT) and bcryptjs password hashing.
 Role-Based Access Control (RBAC):
   Viewer: Can only view the aggregated dashboard summaries.
   Analyst: Can view the dashboard summaries and the raw list of financial records.
   Admin: Full access. Can create, update, and delete records, as well as manage user accounts and statuses.
-
+  
 Financial Management: Complete CRUD operations for financial income and expense tracking.
 
 Dashboard Aggregation: Utilizes MongoDB `$aggregate` pipelines to efficiently calculate total income, total expenses, net balance, category breakdowns, and monthly financial trends.
 
 Scurity: Account deactivation checks built directly into the authentication middleware.
 
-
 ## Tech Stack
-
 Runtime: Node.js
 Framework: Express.js
 Database: MongoDB
 ODM: Mongoose
 Security: `jsonwebtoken` (JWT), `bcryptjs`, `cors`
 
-
-
 ##  Local Setup & Installation
-
 1. Prerequisites
 Ensure you have the following installed on your machine:
 Node.js
@@ -51,7 +43,6 @@ JWT_SECRET=your_super_secret_jwt_key
 ```bash
 npm run dev
 ```
-
 ## Folder Strecture
 /backend
 ├── config/
