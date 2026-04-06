@@ -40,7 +40,7 @@ MongoDB
 git clone <your-repository-url>
 cd <your-project-folder>
 npm install
-
+```
 3. Create .env file
 add
 PORT=5000
@@ -50,7 +50,7 @@ JWT_SECRET=your_super_secret_jwt_key
 4. start server
 ```bash
 npm run dev
-
+```
 
 ## Folder Strecture
 /backend
